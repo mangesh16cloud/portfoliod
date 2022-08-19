@@ -4,7 +4,7 @@ pipeline {
         nodejs "nodejs"
     }
     stages {
-        stage('SCM checkout server') {
+        stage('SCM checkout phase') {
 	     agent { 
     		label 'jenkins-agent'
 		}
