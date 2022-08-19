@@ -9,7 +9,7 @@ pipeline {
     		label 'jenkins-agent'
 		}
             steps {
-		checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/arsh-ash/Portfolio-website.git']]])
+		checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mangesh16cloud/portfoliod.git']]])
 		
 		stash 'source'
             }
