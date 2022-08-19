@@ -15,13 +15,13 @@ pipeline {
             }
         }
 	
-        stage('next VM ') {
+        stage('build phase') {
             steps {
                 unstash 'source'
                 echo 'unstash successful'
         }
         }
-        stage ('npm build phase UNDER CONSTRUCTION') {
+        stage ('deploy phase UNDER CONSTRUCTION') {
             steps{
                 unstash 'source'
                 echo 'unstash is successfull'
